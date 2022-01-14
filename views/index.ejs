@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<%- include("./partials/header.ejs") %>
+    <body>
+        <div>
+            <form class="button" action="/pokemons/new">
+                <input class="add-button" type="submit" value="Add New"/>
+            </form>
+            <form class="button">
+                <input class="search-field" type="search" id="search-pokemon" onkeyup="searchFunction()" placeholder="Search">
+            </form>
+        </div>
+            <div class="flex-container">
+                <% for(let i=0; i <data.length; i++){ %>
+                    <div class="cards">
+                        <a href="/pokemons/<%= i %>">
+                            <div class="card">
+                                <img class="pokemon-img" src="<%=data[i].img%>">
+                                <h4><%=data[i].name%></h4>
+                            </div>
+                        </a>
+                    </div>
+                <% } %>
+            </div>
+    </body>
+</html>
+

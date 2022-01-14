@@ -1,0 +1,35 @@
+nav{
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards{
+    margin-top:5px;
+    width: 6em;
+    background-color: white;
+    text-align: center;
+    font-size: smaller;
+}
+
+.pokemon-img{
+    width: 3em;
+    height: 5em;
+}
+
+.button{
+    display: inline-block;
+    padding-top:2px;
+}
+
+.submit-button {
+    margin-right: 3em;
+    margin-top: 2em;
+}
+
+#pokemon-img-showpage{
+    width: 50px;
+}
